@@ -4,9 +4,3 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
-
-[template]
-  incoming-hooks = ["WixData"]
-
-[template.environment]
-  NEXT_PUBLIC_WIX_CLIENT_ID = "Wix Headless Client ID"
