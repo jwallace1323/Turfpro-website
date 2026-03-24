@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-gray-900 antialiased;
+  }
+}
+
+@layer components {
+  /* ── Buttons ── */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2
+           bg-brand-green hover:bg-brand-green-dark
+           text-white font-semibold
+           px-8 py-3 rounded-lg
+           transition-all duration-200 shadow-sm hover:shadow-md;
+  }
+
+  .btn-outline-white {
+    @apply inline-flex items-center justify-center gap-2
+           border-2 border-white text-white
+           hover:bg-white hover:text-brand-blue
+           font-semibold
+           px-8 py-3 rounded-lg
+           transition-all duration-200;
+  }
+
+  .btn-blue {
+    @apply inline-flex items-center justify-center gap-2
+           bg-brand-blue hover:bg-brand-blue-dark
+           text-white font-semibold
+           px-8 py-3 rounded-lg
+           transition-all duration-200 shadow-sm hover:shadow-md;
+  }
+
+  /* ── Section layout ── */
+  .section-container {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-eyebrow {
+    @apply text-sm font-semibold uppercase tracking-widest text-brand-blue;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-brand-dark leading-tight;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-gray-500 mt-3 leading-relaxed;
+  }
+
+  /* ── Form inputs ── */
+  .form-input {
+    @apply w-full px-4 py-3
+           border border-gray-200 rounded-lg
+           bg-white text-gray-900 placeholder-gray-400
+           focus:outline-none focus:ring-2 focus:ring-brand-blue/30 focus:border-brand-blue
+           transition-colors duration-150;
+  }
+}

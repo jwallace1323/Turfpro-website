@@ -1,0 +1,25 @@
+{
+  "name": "turf-pros",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "npm@10.9.4",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^14.2.29",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "@wix/sdk": "^1.13.0",
+    "@wix/data": "^1.0.0",
+    "@wix/media": "^1.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "@netlify/plugin-nextjs": "^5.3.3"
+  }
+}
